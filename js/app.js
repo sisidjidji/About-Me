@@ -1,4 +1,5 @@
 
+"use Strict"
 
 var username = prompt('Please Enter Your Name');
 console.log(username);
@@ -69,7 +70,7 @@ if(lowerCaseAnswerFour  === 'yes' || lowerCaseAnswerFour  === 'y')
     alert(' Wrong! ');
 }
 
-var answer5 = prompt('Do you have any previous experiance with coding ? ') ;
+var answer5 = prompt('Do I have any previous experiance with coding ? ') ;
 
 console.log(answer5);
 
@@ -88,50 +89,6 @@ if(lowerCaseAnswerFive  === 'yes' || lowerCaseAnswerFive  === 'y')
 alert('Welcome again ' +username +' thank you for your time');
 
 
-// var userinfo2 = prompt(' Do i have kids ?');
-//         console.log(userinfo2);
-
-// if(userinfo2  === 'yes' )
-// {
-//     alert('correct '  + username + ' i do have kids , tow actualy ');
-// } else {
-//     alert('Wrong !');
-// }
-
-// var userinfo3 = prompt(' Do i have pets ');
-//         console.log(userinfo3);
-
-// if(userinfo3 === 'yes' )
-// {
-//     alert('Wrong!! ' );
-// } else {
-//     alert(' correct! , I think i am the only americain cetizen that dosent have pets ');
-// }
-
-
-// var userinfo4 = prompt(' Do i like traveling ');
-//         console.log(userinfo4);
-
-// if(userinfo4  === 'yes' )
-// {
-//     alert('Correct!!');
-// } else {
-//     alert('WRONG!');
-// }
-
-// var userinfo5 = prompt('Do you have any previous experiance with coding ');
-        
-// console.log(userinfo5);
-
-
-//     if  (userinfo5=== 'yes' ) {
-//         alert('CORRECT!');
-//     } else {
-//         alert('WRONG');
-//     }
-// }
-
-// alert('Please answer with a yes or no ');
 
 
 
