@@ -35,11 +35,11 @@ if (lowerCaseAnswerTwo  === 'yes' || lowerCaseAnswerTwo  === 'y')
 
 } else {
 
-    alert('wrong!');
+    alert('wrong! I have 2 kids');
 }
 
 
-var answer3 = prompt('Do i have pets') ;
+var answer3 = prompt('Do i have pets ?') ;
 
 console.log(answer3);
 
@@ -47,11 +47,11 @@ var lowerCaseAnswerThree = answer3.toLowerCase();
   
 if(lowerCaseAnswerThree  === 'yes' || lowerCaseAnswerThree  === 'y')
 {
-    alert('Wrong!! ');
+    alert('Wrong!! I think i am the only americain cetizen that dosent have pets');
 
 } else {
 
-    alert('Correct!');
+    alert('Correct! I think i am the only americain cetizen that dosent have pets');
 }
 
 var answer4 = prompt( ' Do i like traveling ? ') ;
