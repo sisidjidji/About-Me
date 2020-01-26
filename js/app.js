@@ -3,7 +3,7 @@
 
 var username = prompt('Please Enter Your Name');
 console.log(username);
-  
+
 confirm ('Hi ' + username + ' would you like to know more about Me !!! ');
 
 alert('Please answer with (Yes or No or y or n) to the following Question') ;
@@ -13,15 +13,20 @@ var answer1 = prompt('Do i love peperroni ?') ;
 console.log(answer1);
 
 var lowerCaseAnswerOne = answer1.toLowerCase();
-  
+
 if(lowerCaseAnswerOne  === 'yes' || lowerCaseAnswerOne  === 'y')
+
 {
     alert('wrong ' + username +' I dont eat Pork');
 
-} else {
+} 
+else if (lowerCaseAnswerOne  === 'no' || lowerCaseAnswerOne  === 'n'){
 
     alert('Correct!');
-}
+
+ }
+
+
 
 
 var answer2 = prompt('Do i have kids ?') ;
@@ -34,7 +39,7 @@ if (lowerCaseAnswerTwo  === 'yes' || lowerCaseAnswerTwo  === 'y')
 {
     alert('correct '  + username + ' i do have kids , tow actualy ');
 
-} else {
+} else if (lowerCaseAnswerTwo  === 'no' || lowerCaseAnswerTwo  === 'n') {
 
     alert('wrong! I have 2 kids');
 }
@@ -86,9 +91,75 @@ if(lowerCaseAnswerFive  === 'yes' || lowerCaseAnswerFive  === 'y')
 }
 
 
-alert('Welcome again ' +username +' thank you for your time');
+
+var answer6 = prompt('Now we are going to play a different game i will ask you to guess a number between 0-10  ? ') ;
+
+console.log(answer6);
+
+var numb = 7;
+
+for(var i=4; i>0; i--){
+
+if (answer6 == numb) {
+
+alert ('Correct you are the best  '); 
+
+break;
+
+}
+
+else if(answer6>numb)
+ {
+alert ('it is too high ');
+
+}
+else if (answer6<numb){
+
+    alert ('it is too low  '); 
+}
+
+
+
+answer6 = prompt ('please try again');
+
+ }
 
 
 
 
 
+var answer7 = prompt('Can you guess the brand of my household cars ? ') ;
+
+console.log(answer7);
+
+var  array_answer7 = ['kia', 'Mazda','Volvo'] ;
+
+var len = array_answer7.length;
+
+for(var i=5 ; i>0; i--)
+{
+    var iscorrect =false;
+
+for(var x=0 ;x < len; x++){
+
+   if (array_answer7[x] == answer7)
+   {
+
+        alert( 'Good job !!');
+        iscorrect=true;
+        break;
+    }
+    
+}
+if( iscorrect){
+    break;
+}
+answer7 = prompt('Please try again');
+
+}
+
+alert('The correct answers are ' + array_answer7[0]+ '  ' + array_answer7[1]+ '  '  + array_answer7[2]); 
+
+
+
+alert('Welcome again ' +username +' thank you for your time'); 
