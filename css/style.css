@@ -1,0 +1,72 @@
+#header {
+float: left;
+color: white;
+padding: 60px;
+margin:0;
+font-family: arial ;
+border-radius: 1em;
+margin-bottom: 50px;
+background-image: url("/images/picture2.jpg")  ;
+
+marg 30px
+
+
+}
+
+#page {
+
+   
+    background-color: silver;
+    border-width: 2px ;
+    border-width: thick;
+    border:4px double #000 ;
+    border-radius: 10px;
+  
+}
+
+#titel2 {
+    clear: left;
+    color:purple ;
+    margin-top: 20px ;
+    font-family: arial ;
+    ;
+}
+
+
+#block1 {
+ float: left; 
+    border-width: 2px ;
+   
+}
+
+#block2{
+
+  
+}
+
+nav li {
+display: inline-block ;
+
+}
+
+li:first-child {
+    margin-left: 700px;
+}
+nav li {
+    margin-right: 20px;
+    margin-top: 40px;
+    color: purple;
+    border: rebeccapurple solid 2px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: arial ;
+
+    
+}
+
+p{
+
+    font-family: ;
+    text-align: left;
+}

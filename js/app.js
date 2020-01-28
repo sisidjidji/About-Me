@@ -55,7 +55,7 @@ if(lowerCaseAnswerThree  === 'yes' || lowerCaseAnswerThree  === 'y')
 {
     alert('Wrong!! I think i am the only americain cetizen that dosent have pets');
 
-} else {
+} else if (lowerCaseAnswerThree  === 'no' || lowerCaseAnswerThree  === 'n') {
 
     alert('Correct! I think i am the only americain cetizen that dosent have pets');
 }
@@ -70,7 +70,7 @@ if(lowerCaseAnswerFour  === 'yes' || lowerCaseAnswerFour  === 'y')
 {
     alert('Correct!');
 
-} else {
+} else if (lowerCaseAnswerFour  === 'no' || lowerCaseAnswerFour  === 'n') {
 
     alert(' Wrong! ');
 }
@@ -85,7 +85,7 @@ if(lowerCaseAnswerFive  === 'yes' || lowerCaseAnswerFive  === 'y')
 {
     alert('Correct!');
 
-} else {
+} else if (lowerCaseAnswerFive  === 'no' || lowerCaseAnswerFive  === 'n') {
 
     alert('Wrong !');
 }
@@ -123,8 +123,6 @@ else if (answer6<numb){
 answer6 = prompt ('please try again');
 
  }
-
-
 
 
 
