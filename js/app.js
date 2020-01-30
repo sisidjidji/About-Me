@@ -60,18 +60,21 @@ function AskQuestionThree() {
     }
 }
 
-var answer4 = prompt(' Do i like traveling ? ');
 
-console.log(answer4);
+function AskQuestionFour() {
+    var answer4 = prompt(' Do i like traveling ? ');
 
-var lowerCaseAnswerFour = answer4.toLowerCase();
+    console.log(answer4);
 
-if (lowerCaseAnswerFour === 'yes' || lowerCaseAnswerFour === 'y') {
-    alert('Correct!');
+    var lowerCaseAnswerFour = answer4.toLowerCase();
 
-} else if (lowerCaseAnswerFour === 'no' || lowerCaseAnswerFour === 'n') {
+    if (lowerCaseAnswerFour === 'yes' || lowerCaseAnswerFour === 'y') {
+        alert('Correct!');
 
-    alert(' Wrong! ');
+    } else if (lowerCaseAnswerFour === 'no' || lowerCaseAnswerFour === 'n') {
+
+        alert(' Wrong! ');
+    }
 }
 
 var answer5 = prompt('Do I have any previous experiance with coding ? ');
