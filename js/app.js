@@ -27,34 +27,37 @@ function AskQuestionOne() {
 }
 
 
+function AskQuestionTwo() {
+    var answer2 = prompt('Do i have kids ?');
 
-var answer2 = prompt('Do i have kids ?');
+    console.log(answer2);
 
-console.log(answer2);
+    var lowerCaseAnswerTwo = answer2.toLowerCase();
 
-var lowerCaseAnswerTwo = answer2.toLowerCase();
+    if (lowerCaseAnswerTwo === 'yes' || lowerCaseAnswerTwo === 'y') {
+        alert('correct ' + username + ' i do have kids , tow actualy ');
 
-if (lowerCaseAnswerTwo === 'yes' || lowerCaseAnswerTwo === 'y') {
-    alert('correct ' + username + ' i do have kids , tow actualy ');
+    } else if (lowerCaseAnswerTwo === 'no' || lowerCaseAnswerTwo === 'n') {
 
-} else if (lowerCaseAnswerTwo === 'no' || lowerCaseAnswerTwo === 'n') {
-
-    alert('wrong! I have 2 kids');
+        alert('wrong! I have 2 kids');
+    }
 }
 
 
-var answer3 = prompt('Do i have pets ?');
+function AskQuestionThree() {
+    var answer3 = prompt('Do i have pets ?');
 
-console.log(answer3);
+    console.log(answer3);
 
-var lowerCaseAnswerThree = answer3.toLowerCase();
+    var lowerCaseAnswerThree = answer3.toLowerCase();
 
-if (lowerCaseAnswerThree === 'yes' || lowerCaseAnswerThree === 'y') {
-    alert('Wrong!! I think i am the only americain cetizen that dosent have pets');
+    if (lowerCaseAnswerThree === 'yes' || lowerCaseAnswerThree === 'y') {
+        alert('Wrong!! I think i am the only americain cetizen that dosent have pets');
 
-} else if (lowerCaseAnswerThree === 'no' || lowerCaseAnswerThree === 'n') {
+    } else if (lowerCaseAnswerThree === 'no' || lowerCaseAnswerThree === 'n') {
 
-    alert('Correct! I think i am the only americain cetizen that dosent have pets');
+        alert('Correct! I think i am the only americain cetizen that dosent have pets');
+    }
 }
 
 var answer4 = prompt(' Do i like traveling ? ');
