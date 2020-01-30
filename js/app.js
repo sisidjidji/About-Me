@@ -123,33 +123,34 @@ function AskQuestionSix() {
     }
 }
 
+function AskQuestionSeven() {
+    var answer7 = prompt('Can you guess the brand of my household cars ? ');
 
-var answer7 = prompt('Can you guess the brand of my household cars ? ');
+    console.log(answer7);
 
-console.log(answer7);
+    var array_answer7 = ['kia', 'Mazda', 'Volvo'];
 
-var array_answer7 = ['kia', 'Mazda', 'Volvo'];
+    var len = array_answer7.length;
 
-var len = array_answer7.length;
+    for (var i = 5; i > 0; i--) {
+        var iscorrect = false;
 
-for (var i = 5; i > 0; i--) {
-    var iscorrect = false;
+        for (var x = 0; x < len; x++) {
 
-    for (var x = 0; x < len; x++) {
+            if (array_answer7[x] == answer7) {
 
-        if (array_answer7[x] == answer7) {
+                alert('Good job !!');
+                iscorrect = true;
+                break;
+            }
 
-            alert('Good job !!');
-            iscorrect = true;
+        }
+        if (iscorrect) {
             break;
         }
+        answer7 = prompt('Please try again');
 
     }
-    if (iscorrect) {
-        break;
-    }
-    answer7 = prompt('Please try again');
-
 }
 
 alert('The correct answers are ' + array_answer7[0] + '  ' + array_answer7[1] + '  ' + array_answer7[2]);
