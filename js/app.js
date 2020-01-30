@@ -93,35 +93,35 @@ function AskQuestionFive() {
     }
 }
 
+function AskQuestionSix() {
+    var answer6 = prompt('Now we are going to play a different game i will ask you to guess a number between 0-10  ? ');
 
-var answer6 = prompt('Now we are going to play a different game i will ask you to guess a number between 0-10  ? ');
+    console.log(answer6);
 
-console.log(answer6);
+    var numb = 7;
 
-var numb = 7;
+    for (var i = 4; i > 0; i--) {
 
-for (var i = 4; i > 0; i--) {
+        if (answer6 == numb) {
 
-    if (answer6 == numb) {
+            alert('Correct you are the best  ');
 
-        alert('Correct you are the best  ');
+            break;
 
-        break;
+        } else if (answer6 > numb) {
+            alert('it is too high ');
 
-    } else if (answer6 > numb) {
-        alert('it is too high ');
+        } else if (answer6 < numb) {
 
-    } else if (answer6 < numb) {
+            alert('it is too low  ');
+        }
 
-        alert('it is too low  ');
+
+
+        answer6 = prompt('please try again');
+
     }
-
-
-
-    answer6 = prompt('please try again');
-
 }
-
 
 
 var answer7 = prompt('Can you guess the brand of my household cars ? ');
