@@ -2,6 +2,7 @@
 
 var username = prompt('Please Enter Your Name');
 console.log(username);
+var count=0 ;
 
 confirm('Hi ' + username + ' would you like to know more about Me !!! ');
 
@@ -16,14 +17,17 @@ AskQuestionSix();
 AskQuestionSeven();
 
 
+
 function AskQuestionOne() {
     var answer1 = prompt('Do i love peperroni ?');
     console.log(answer1);
     var lowerCaseAnswerOne = answer1.toLowerCase();
     if (lowerCaseAnswerOne === 'yes' || lowerCaseAnswerOne === 'y') {
         alert('wrong ' + username + ' I dont eat Pork');
+
     } else if (lowerCaseAnswerOne === 'no' || lowerCaseAnswerOne === 'n') {
         alert('Correct!');
+        count++;
     }
 }
 
@@ -34,6 +38,7 @@ function AskQuestionTwo() {
     var lowerCaseAnswerTwo = answer2.toLowerCase();
     if (lowerCaseAnswerTwo === 'yes' || lowerCaseAnswerTwo === 'y') {
         alert('correct ' + username + ' i do have kids , tow actualy ');
+        count++;
     } else if (lowerCaseAnswerTwo === 'no' || lowerCaseAnswerTwo === 'n') {
         alert('wrong! I have 2 kids');
     }
@@ -48,6 +53,7 @@ function AskQuestionThree() {
         alert('Wrong!! I think i am the only americain cetizen that dosent have pets');
     } else if (lowerCaseAnswerThree === 'no' || lowerCaseAnswerThree === 'n') {
         alert('Correct! I think i am the only americain cetizen that dosent have pets');
+        count++;
     }
 }
 
@@ -58,6 +64,7 @@ function AskQuestionFour() {
     var lowerCaseAnswerFour = answer4.toLowerCase();
     if (lowerCaseAnswerFour === 'yes' || lowerCaseAnswerFour === 'y') {
         alert('Correct!');
+        count++;
     } else if (lowerCaseAnswerFour === 'no' || lowerCaseAnswerFour === 'n') {
         alert(' Wrong! ');
     }
@@ -69,6 +76,7 @@ function AskQuestionFive() {
     var lowerCaseAnswerFive = answer5.toLowerCase();
     if (lowerCaseAnswerFive === 'yes' || lowerCaseAnswerFive === 'y') {
         alert('Correct!');
+        count++;
     } else if (lowerCaseAnswerFive === 'no' || lowerCaseAnswerFive === 'n') {
         alert('Wrong !');
     }
@@ -81,6 +89,7 @@ function AskQuestionSix() {
     for (var i = 4; i > 0; i--) {
         if (answer6 == numb) {
             alert('Correct you are the best  ');
+            count++ ;
             break;
         } else if (answer6 > numb) {
             alert('it is too high ');
@@ -102,7 +111,9 @@ function AskQuestionSeven() {
             if (array_answer7[x] == answer7) {
                 alert('Good job !!');
                 iscorrect = true;
+                count++;
                 break;
+               
             }
         }
         if (iscorrect) {
@@ -112,5 +123,6 @@ function AskQuestionSeven() {
     }
 }
 
-alert('The correct answers are ' + array_answer7[0] + '  ' + array_answer7[1] + '  ' + array_answer7[2]);
+alert('thank you for playing '+username+ 'you get ' + count +' good answer' );
+
 alert('Welcome again ' + username + ' thank you for your time');
