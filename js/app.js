@@ -8,6 +8,12 @@ confirm('Hi ' + username + ' would you like to know more about Me !!! ');
 alert('Please answer with (Yes or No or y or n) to the following Question');
 
 AskQuestionOne();
+AskQuestionTwo();
+AskQuestionThree();
+AskQuestionFour();
+AskQuestionFive();
+AskQuestionSix();
+AskQuestionSeven();
 
 
 function AskQuestionOne() {
