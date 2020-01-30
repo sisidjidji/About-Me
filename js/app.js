@@ -77,20 +77,21 @@ function AskQuestionFour() {
     }
 }
 
-var answer5 = prompt('Do I have any previous experiance with coding ? ');
+function AskQuestionFive() {
+    var answer5 = prompt('Do I have any previous experiance with coding ? ');
 
-console.log(answer5);
+    console.log(answer5);
 
-var lowerCaseAnswerFive = answer5.toLowerCase();
+    var lowerCaseAnswerFive = answer5.toLowerCase();
 
-if (lowerCaseAnswerFive === 'yes' || lowerCaseAnswerFive === 'y') {
-    alert('Correct!');
+    if (lowerCaseAnswerFive === 'yes' || lowerCaseAnswerFive === 'y') {
+        alert('Correct!');
 
-} else if (lowerCaseAnswerFive === 'no' || lowerCaseAnswerFive === 'n') {
+    } else if (lowerCaseAnswerFive === 'no' || lowerCaseAnswerFive === 'n') {
 
-    alert('Wrong !');
+        alert('Wrong !');
+    }
 }
-
 
 
 var answer6 = prompt('Now we are going to play a different game i will ask you to guess a number between 0-10  ? ');
